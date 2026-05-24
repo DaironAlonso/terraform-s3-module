@@ -111,7 +111,7 @@ El workflow `.github/workflows/ci.yml` se dispara automáticamente en cada **Pul
 | Security scan | `checkov-action@v12` | Detecta vulnerabilidades IaC |
 | PR Comment | `actions/github-script@v7` | Publica resumen en el PR |
 
-> **Nota:** No se ejecuta `terraform apply`. El objetivo es validar calidad del código sin incurrir en costos ni exponer credenciales.
+> **Nota:** No se ejecuta `terraform apply`. El objetivo es validar calidad del código.
 
 ***
 

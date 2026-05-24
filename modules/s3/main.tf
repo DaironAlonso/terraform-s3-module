@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "this" {
   )
 }
 
-# Block all public access
+# Bloquear todo acceso público
 resource "aws_s3_bucket_public_access_block" "this" {
   bucket = aws_s3_bucket.this.id
 
@@ -20,7 +20,7 @@ resource "aws_s3_bucket_public_access_block" "this" {
   restrict_public_buckets = true
 }
 
-# Enable versioning
+# Habilitar versionado
 resource "aws_s3_bucket_versioning" "this" {
   bucket = aws_s3_bucket.this.id
 
@@ -29,7 +29,7 @@ resource "aws_s3_bucket_versioning" "this" {
   }
 }
 
-# Enable server-side encryption at rest
+# Habilitar cifrado del lado del servidor en reposo
 resource "aws_s3_bucket_server_side_encryption_configuration" "this" {
   bucket = aws_s3_bucket.this.id
 
@@ -42,7 +42,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "this" {
   }
 }
 
-# Enforce SSL-only access via bucket policy
+# Exigir acceso solo por SSL mediante política de bucket
 resource "aws_s3_bucket_policy" "enforce_tls" {
   bucket = aws_s3_bucket.this.id
   policy = data.aws_iam_policy_document.enforce_tls.json

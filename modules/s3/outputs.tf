@@ -1,14 +1,14 @@
 output "bucket_id" {
-  description = "The name (ID) of the S3 bucket."
+  description = "Nombre (ID) del bucket S3."
   value       = aws_s3_bucket.this.id
 }
 
 output "bucket_arn" {
-  description = "The ARN of the S3 bucket."
+  description = "ARN del bucket S3."
   value       = aws_s3_bucket.this.arn
 }
 
 output "bucket_regional_domain_name" {
-  description = "The regional domain name of the bucket."
+  description = "Nombre de dominio regional del bucket."
   value       = aws_s3_bucket.this.bucket_regional_domain_name
 }
