@@ -1,6 +1,6 @@
 # terraform-s3-module
 
-Solución para el cargo Profesional III DevOps - Banco Davivienda es un módulo reutilizable de Terraform para provisionar buckets S3 en AWS con controles de seguridad habilitados por defecto.
+Solución para el cargo Profesional III DevOps - Banco Davivienda, es un módulo reutilizable de Terraform para provisionar buckets S3 en AWS con controles de seguridad habilitados por defecto.
 ***
 
 ## Controles de seguridad incluidos por defecto
