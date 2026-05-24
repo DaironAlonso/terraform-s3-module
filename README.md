@@ -77,7 +77,7 @@ terraform apply
 ### Módulo `modules/s3`
 
 | Variable | Tipo | Por defecto | Descripción |
-|----------|------|-----------|-------------|-------------|
+|----------|------|-------------|-------------|
 | `bucket_name` | `string` | — | Nombre único global del bucket |
 | `environment` | `string` | `"dev"` | Entorno (`dev`, `staging`, `prod`) |
 | `kms_key_arn` | `string`  | `null` | ARN de clave KMS (si `null` usa AES-256) |
